@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head> 
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="all_pages/login.html"><img src="images/electronic-voting.png"></a>
+            <div class="nav-links" id="navlinks">
+            
+                <i class="fa-solid" 
+                 onclick="hidemenu()"> <img src="images/close_logo.png"></i>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="all_pages/login.html">UserLogin</a></li>
+                    <li><a href="Admin/login.html">Admin Login</a></li>
+                    <li><a href="">About</a></li>
+
+                </ul>
+            </div>
+            <i class="fa-solid" onclick="showmenu()" > <img src="images/show.png"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Online Voting </h1>
+            <a href="all_pages/login.html" class="hero-btn">Get Started</a>
+        </div>
+    </section>
+    <script>
+        var navlinks = document.getElementById("navlinks")
+        function showmenu() {
+            navlinks.style.right = "0";
+
+        }
+        function hidemenu() {
+            navlinks.style.right = "-200";
+        }
+    </script>
+</body>
+
+</html>
